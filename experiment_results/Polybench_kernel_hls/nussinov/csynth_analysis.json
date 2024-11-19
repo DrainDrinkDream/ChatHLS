@@ -1,0 +1,10 @@
+{
+    "Project Name": "E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov",
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "PPA Unsatisfied may cause co-simulation false",
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 200-960] Cannot flatten loop 'L2' (nussinov.cpp:13:10) in function 'kernel_nussinov' the outer loop is not a perfect loop because there is nontrivial logic in the sub loop header.\n",
+        "WARNING: [HLS 200-960] Cannot flatten loop 'L1' (nussinov.cpp:13:7) in function 'kernel_nussinov' the outer loop is not a perfect loop.\n",
+        "WARNING: [HLS 200-880] The II Violation in module 'kernel_nussinov_Pipeline_L3' (loop 'L3'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'load' operation ('table_r_load', nussinov.cpp:32) on array 'table_r' and 'store' operation ('table_r_addr_write_ln32', nussinov.cpp:32) of variable 'p_load', nussinov.cpp:32 on array 'table_r'.\n"
+    ]
+}

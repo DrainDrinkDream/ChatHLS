@@ -1,0 +1,8 @@
+{
+    "Project Name": "E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/floyd-warshall",
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "PPA Unsatisfied may cause co-simulation false",
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 200-885] The II Violation in module 'kernel_floyd_warshall' (loop 'L1_L2_L3'): Unable to schedule 'load' operation ('path_load_2', floyd-warshall.cpp:19) on array 'path' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'path'.\n"
+    ]
+}

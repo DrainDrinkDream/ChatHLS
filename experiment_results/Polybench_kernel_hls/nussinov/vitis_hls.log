@@ -1,0 +1,100 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source E:/Vitis/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/Vitis/Vitis_HLS/2022.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'fd_reality' on host 'laptop-olt6hjvt' (Windows NT_amd64 version 6.2) on Tue Nov 12 15:21:18 +0800 2024
+INFO: [HLS 200-10] In directory 'E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov'
+Sourcing Tcl script 'E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov/run_hls.tcl'
+INFO: [HLS 200-1510] Running: source E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov/run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset test_proj_nussinov 
+INFO: [HLS 200-10] Creating and opening project 'E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov/test_proj_nussinov'.
+INFO: [HLS 200-1510] Running: add_files nussinov.cpp 
+INFO: [HLS 200-10] Adding design file 'nussinov.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files nussinov.h 
+INFO: [HLS 200-10] Adding design file 'nussinov.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution 
+INFO: [HLS 200-10] Creating and opening solution 'E:/VScode/HLS_LLM_Code/HLSGen/Polybench_kernel_hls/nussinov/test_proj_nussinov/solution'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_top kernel_nussinov 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] Analyzing design file 'nussinov.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 38.828 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.444 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 1.420 GB.
+INFO: [XFORM 203-510] Pipelining loop 'L3' (nussinov.cpp:13) in function 'kernel_nussinov' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nussinov.cpp:13:10) in function 'kernel_nussinov'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 1.420 GB.
+WARNING: [HLS 200-960] Cannot flatten loop 'L2' (nussinov.cpp:13:10) in function 'kernel_nussinov' the outer loop is not a perfect loop because there is nontrivial logic in the sub loop header.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'L1' (nussinov.cpp:13:7) in function 'kernel_nussinov' the outer loop is not a perfect loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel_nussinov' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel_nussinov_Pipeline_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L3'.
+WARNING: [HLS 200-880] The II Violation in module 'kernel_nussinov_Pipeline_L3' (loop 'L3'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'load' operation ('table_r_load', nussinov.cpp:32) on array 'table_r' and 'store' operation ('table_r_addr_write_ln32', nussinov.cpp:32) of variable 'p_load', nussinov.cpp:32 on array 'table_r'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 4, loop 'L3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 1.420 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel_nussinov' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 1.420 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel_nussinov_Pipeline_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kernel_nussinov_Pipeline_L3' pipeline 'L3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_nussinov_Pipeline_L3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.255 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel_nussinov' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_nussinov/seq' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel_nussinov/table_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel_nussinov' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel_nussinov'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.939 seconds; current allocated memory: 1.420 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.803 seconds; current allocated memory: 1.420 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel_nussinov.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel_nussinov.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 219.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 47.38 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 51.259 seconds; peak allocated memory: 1.420 GB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov 12 15:22:09 2024...
