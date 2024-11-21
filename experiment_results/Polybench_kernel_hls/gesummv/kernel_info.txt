@@ -1,3 +1,0 @@
-kernel_gesummv
-L1,loop,30
-L2,loop,30

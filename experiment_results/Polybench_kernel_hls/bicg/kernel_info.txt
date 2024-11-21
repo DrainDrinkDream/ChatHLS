@@ -1,4 +1,0 @@
-kernel_bicg
-L1,loop,38
-L2,loop,42
-L3,loop,38

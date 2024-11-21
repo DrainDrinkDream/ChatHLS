@@ -1,8 +1,0 @@
-kernel_heat_3d
-L1,loop,20
-L2,loop,8
-L3,loop,8
-L4,loop,8
-L5,loop,8
-L6,loop,8
-L7,loop,8
