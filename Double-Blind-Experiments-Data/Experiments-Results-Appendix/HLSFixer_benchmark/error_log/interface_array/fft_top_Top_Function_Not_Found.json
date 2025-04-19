@@ -1,0 +1,30 @@
+{
+    "Project Name": "interface_array_fft_top",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../fft_tb.cpp in debug mode\n",
+        "   Compiling ../../../../fft_top.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/fft_top.o' failed\n",
+        "../../../../fft_top.cpp:1:41: error: 'complex' has not been declared\n",
+        " void fft_top_wrong_name(bool direction, complex<data_in_t> in[FFT_LENGTH],\n",
+        "                                         ^~~~~~~\n",
+        "../../../../fft_top.cpp:1:48: error: expected ',' or '...' before '<' token\n",
+        " void fft_top_wrong_name(bool direction, complex<data_in_t> in[FFT_LENGTH],\n",
+        "                                                ^\n",
+        "../../../../fft_top.cpp: In function 'void fft_top_wrong_name(bool, int)':\n",
+        "../../../../fft_top.cpp:8:5: error: 'complex' was not declared in this scope\n",
+        "     complex<data_in_t> xn[FFT_LENGTH];\n",
+        "     ^~~~~~~\n",
+        "make: *** [obj/fft_top.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

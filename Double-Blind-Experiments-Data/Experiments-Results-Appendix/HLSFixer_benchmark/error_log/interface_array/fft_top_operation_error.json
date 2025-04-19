@@ -1,0 +1,31 @@
+{
+    "Project Name": "interface_array_fft_top",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../fft_tb.cpp in debug mode\n",
+        "   Compiling ../../../../fft_top.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/fft_top.o' failed\n",
+        "../../../../fft_top.cpp: In function 'void outputdatamover(status_t*, bool*, cmpxDataOut*, cmpxDataOut*)':\n",
+        "../../../../fft_top.cpp:17:24: error: no match for 'operator+' (operand types are 'cmpxDataOut {aka std::complex<ap_fixed<16, 1> >}' and 'int')\n",
+        "         out[i] = in[i] + 1;\n",
+        "                  ~~~~~~^~~\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/ap_fixed_base.h:2463:3: note: candidate: template<int _AP_W, int _AP_I, bool _AP_S, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N, int _AP_W2, bool _AP_S2> typename ap_fixed_base<_AP_W, _AP_I, _AP_S>::RType<_AP_W2, _AP_W2, _AP_S2>::plus operator+(const ap_fixed_base<_AP_W, _AP_I, _AP_S, _AP_Q, _AP_O, _AP_N>&, const ap_int_base<_AP_W2, _AP_S2>&)\n",
+        "   operator BIN_OP(                                                          \\\n",
+        "   ^\n",
+        "E:/Vitis/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/include/c++/6.2.0/bits/stl_iterator.h:335:5: note:   template argument deduction/substitution failed:\n",
+        "../../../../fft_top.cpp:17:26: note:   mismatched types 'const std::reverse_iterator<_Iterator>' and 'int'\n",
+        "         out[i] = in[i] + 1;\n",
+        "                          ^\n",
+        "make: *** [obj/fft_top.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

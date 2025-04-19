@@ -1,0 +1,32 @@
+{
+    "Project Name": "intermediate3_lfsr",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "CSim timeout",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../lfsr_test.cpp in debug mode\n",
+        "   Compiling ../../../../lfsr.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "Test 1 passed: q = 1\n",
+        "Test 2 passed: q = 1\n",
+        "Terminated\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

@@ -1,0 +1,23 @@
+{
+    "Project Name": "interface_array_fft_top",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Inconsistent simulation result",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../fft_tb.cpp in debug mode\n",
+        "   Compiling ../../../../fft_top.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "Frame:19 index: 1001  Golden: 0 vs. RE Output: 0.99996948242188\n",
+        " ERRORS: 31297\n",
+        " (FAILED!!!)\n",
+        "@E Simulation failed: Function 'main' returns nonzero value '1'.\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

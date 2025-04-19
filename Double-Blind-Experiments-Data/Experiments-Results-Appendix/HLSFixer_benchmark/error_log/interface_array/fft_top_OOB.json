@@ -1,0 +1,47 @@
+{
+    "Project Name": "interface_array_fft_top",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../fft_tb.cpp in debug mode\n",
+        "   Compiling ../../../../fft_top.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "INFO: Reading stimulus_00.dat NFFT 10 CP_LEN  83 FWD_INV 1 sc_sch 2AB\n",
+        "INFO: Reading stimulus_01.dat NFFT 10 CP_LEN 617 FWD_INV 1 sc_sch 2AB\n",
+        "INFO: Reading stimulus_18.dat NFFT 10 CP_LEN 534 FWD_INV 1 sc_sch 2AB\n",
+        "INFO: Reading stimulus_19.dat NFFT 10 CP_LEN 417 FWD_INV 1 sc_sch 2AB\n",
+        " ERRORS: 0\n",
+        " (PASSED!!!)\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot/hls_fft_x_complex.h:565:9)\n",
+        "WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot/hls_fft_x_complex.h:1093:9)\n",
+        "WARNING: [HLS 207-5525] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot/hls_fft_x_complex.h:1126:9)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'data_type' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:146:77)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'has_nfft' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:171:65)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'cp_len_enable' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:184:66)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'scaling_opt' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:197:68)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'scaling_opt' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:361:71)\n",
+        "WARNING: [HLS 207-5292] unused parameter 'has_ovflo' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\hls_fft.h:374:66)\n",
+        "WARNING: [HLS 214-273] In function 'void hls::fft<config1>(std::complex<ap_fixed<(((config1::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((config1::output_width) + (7)) / (8)) * (8), (((((config1::output_width) + (7)) / (8)) * (8)) - (config1::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::ip_fft::status_t<config1>*, hls::ip_fft::config_t<config1>*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form\n",
+        "WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in_r' (fft_top.cpp:30:0)\n",
+        "WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'xk'\n",
+        "WARNING: [HLS 200-805] An internal stream 'config_s' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.\n",
+        "WARNING: [HLS 200-805] An internal stream 'status_s' (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot/hls_fft_x_complex.h:788) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.\n",
+        "WARNING: [HLS 200-786] Detected dataflow-on-top in function  'fft_top' (fft_top.cpp:29:1)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).\n",
+        "WARNING: [HLS 200-765] Process fft_syn<config1> is made part of the output synchronization in its dataflow region, because it has an external FIFO output and no PIPO output\n",
+        "WARNING: [HLS 200-1450] Process fft_syn<config1> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.\n",
+        "WARNING: [HLS 200-1614] Cosimulation may deadlock if process fft_syn<config1> has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream\n",
+        "WARNING: [SYN 201-103] Legalizing function name 'fft_syn<config1>' to 'fft_syn_config1_s'.\n",
+        "WARNING: [RTGEN 206-101] RTL name 'fifo_w16_d2_S' is changed to 'fifo_w16_d2_S_x' due to conflict.\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": [
+        " ERRORS: 0\n"
+    ]
+}
