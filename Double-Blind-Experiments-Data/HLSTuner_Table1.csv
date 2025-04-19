@@ -1,0 +1,20 @@
+Baseline,atax,bicg,gemm,gesummv,mvt
+Latency,1702,1658,15661,470,1629
+DSP_utilization,252,228,181,186,240
+FF_utilization,7551,7384,1657,3570,7834
+LUT_utilization,8407,7697,4787,5609,8681
+,,,,,
+,,,,,
+,,,,,
+xczu7ev-ffvc1156-2-e,,,,,
+Baseline,atax,bicg,gemm,gesummv,mvt
+Latency,1702,1658,15661,470,1629
+DSP_utilization,14%,13%,10%,10%,13%
+FF_utilization,1%,1%,0%,0%,1%
+LUT_utilization,3%,3%,2%,2%,3%
+,,,,,
+,,,,,
+FPGA Total,,,,,
+DSP_utilization,1728,,,,
+FF_utilization,460800,,,,
+LUT_utilization,230400,,,,
