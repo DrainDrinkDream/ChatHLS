@@ -1,0 +1,29 @@
+{
+    "Project Name": "using_axi_lite_example",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../example_test.cpp in debug mode\n",
+        "   Compiling ../../../../example.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "HLS AXI-Lite Example\n",
+        "Function c += a + b\n",
+        "Initial values a = 5, b = 10, c = 0\n",
+        "HW result = 15\n",
+        "SW result = 15\n",
+        "Success SW and HW results match\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "Source synthesis failed",
+    "C-SYNTH Failure Details": [
+        "ERROR: [HLS 214-194] in function 'example(char*, char*, char*)': Undefined function std::allocator<char>::allocator (E:/Vitis/Vitis_HLS/2022.1/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_vector.h:96:4)\n",
+        "ERROR: [HLS 214-194] in function 'example(char*, char*, char*)': Undefined function std::allocator<char>::~allocator (E:/Vitis/Vitis_HLS/2022.1/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_vector.h:88:14)\n",
+        "ERROR: [HLS 214-135] Syn check fail!\n",
+        "ERROR: [HLS 200-1715] Encountered problem during source synthesis\n"
+    ],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

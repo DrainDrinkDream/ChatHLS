@@ -1,0 +1,27 @@
+{
+    "Project Name": "using_axi_lite_example",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../example_test.cpp in debug mode\n",
+        "   Compiling ../../../../example.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/example.o' failed\n",
+        "../../../../example.cpp: In function 'void example(char*, char*, char*)':\n",
+        "../../../../example.cpp:9:5: error: 'def' was not declared in this scope\n",
+        "     def operation():\n",
+        "     ^~~\n",
+        "../../../../example.cpp:12:15: error: 'operation' was not declared in this scope\n",
+        "     operation();\n",
+        "               ^\n",
+        "make: *** [obj/example.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

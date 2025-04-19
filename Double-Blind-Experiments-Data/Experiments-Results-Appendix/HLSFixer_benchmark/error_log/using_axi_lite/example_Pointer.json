@@ -1,0 +1,20 @@
+{
+    "Project Name": "using_axi_lite_example",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Runtime error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../example_test.cpp in debug mode\n",
+        "   Compiling ../../../../example.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "@E Simulation failed: SIGSEGV.\n",
+        "ERROR: [SIM 211-100] CSim failed with errors.\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}
