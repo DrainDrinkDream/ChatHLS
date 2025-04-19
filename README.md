@@ -2,4 +2,4 @@
 ## ICCAD 2025/ 
 ChatHLS: Double-Blind Review Repo  
 All code will be public after review.  
-The test data of the experiment is stored under Double-Blind-Experiments-Data, saved in .xlsx format, which can be downloaded and then viewed.
+The test data of the experiment is stored under Double-Blind-Experiments-Data, saved in .csv format.
