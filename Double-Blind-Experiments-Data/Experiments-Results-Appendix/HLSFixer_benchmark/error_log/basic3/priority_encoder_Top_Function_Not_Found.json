@@ -1,0 +1,25 @@
+{
+    "Project Name": "basic3_priority_encoder",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../test_priority_encoder.cpp in debug mode\n",
+        "   Compiling ../../../../priority_encoder.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "obj/test_priority_encoder.o: In function `main':\n",
+        "E:\\VScode\\benchmark_non_pragma\\basic3\\priority_encoder\\Top_Function_Not_Found\\proj_priority_encoder\\solution1\\csim\\build/../../../../test_priority_encoder.cpp:22: undefined reference to `priority_encoder(ap_uint<3>, ap_uint<2>*)'\n",
+        "E:\\VScode\\benchmark_non_pragma\\basic3\\priority_encoder\\Top_Function_Not_Found\\proj_priority_encoder\\solution1\\csim\\build/../../../../test_priority_encoder.cpp:62: undefined reference to `priority_encoder(ap_uint<3>, ap_uint<2>*)'\n",
+        "obj/test_priority_encoder.o:E:\\VScode\\benchmark_non_pragma\\basic3\\priority_encoder\\Top_Function_Not_Found\\proj_priority_encoder\\solution1\\csim\\build/../../../../test_priority_encoder.cpp:72: more undefined references to `priority_encoder(ap_uint<3>, ap_uint<2>*)' follow\n",
+        "collect2.exe: error: ld returned 1 exit status\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}
