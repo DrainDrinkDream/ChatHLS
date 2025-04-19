@@ -1,0 +1,41 @@
+{
+    "Project Name": "advanced4_advshift",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../advshift_test.cpp in debug mode\n",
+        "   Compiling ../../../../advshift.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "Test 1 passed: load=0, amount=0, ena=0, q=0x0\n",
+        "Test 2 passed: load=1, amount=0x0, ena=0, q=0xffffffffffffffff\n",
+        "Test 3 passed: load=1, amount=0x2, ena=0, q=0xffffffffffffffff\n",
+        "Test 4 passed: load=0, amount=0x0, ena=0, q=0xffffffffffffffff\n",
+        "Test 5 passed: load=0, amount=0x0, ena=1, q=0xfffffffffffffffe\n",
+        "Test 6 passed: load=0, amount=0x1, ena=1, q=0xfffffffffffffe00\n",
+        "Test 7 passed: load=0, amount=0x2, ena=1, q=0x7fffffffffffff00\n",
+        "Test 8 passed: load=0, amount=0x3, ena=1, q=0x7fffffffffffff\n",
+        "All tests passed\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "Undeclared identifier",
+    "C-SYNTH Failure Details": [
+        "ERROR: [HLS 207-3776] use of undeclared identifier 'sqrt' (advshift.cpp:9:41)\n"
+    ],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

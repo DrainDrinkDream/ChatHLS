@@ -1,0 +1,26 @@
+{
+    "Project Name": "advanced4_advshift",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../advshift_test.cpp in debug mode\n",
+        "   Compiling ../../../../advshift.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "obj/advshift_test.o: In function `main':\n",
+        "E:\\VScode\\benchmark_non_pragma\\advanced4\\advshift\\Top_Function_Not_Found\\proj_advshift\\solution1\\csim\\build/../../../../advshift_test.cpp:19: undefined reference to `advshift(bool, bool, ap_uint<2>, ap_uint<64>, ap_uint<64>*)'\n",
+        "E:\\VScode\\benchmark_non_pragma\\advanced4\\advshift\\Top_Function_Not_Found\\proj_advshift\\solution1\\csim\\build/../../../../advshift_test.cpp:67: undefined reference to `advshift(bool, bool, ap_uint<2>, ap_uint<64>, ap_uint<64>*)'\n",
+        "obj/advshift_test.o:E:\\VScode\\benchmark_non_pragma\\advanced4\\advshift\\Top_Function_Not_Found\\proj_advshift\\solution1\\csim\\build/../../../../advshift_test.cpp:79: more undefined references to `advshift(bool, bool, ap_uint<2>, ap_uint<64>, ap_uint<64>*)' follow\n",
+        "collect2.exe: error: ld returned 1 exit status\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

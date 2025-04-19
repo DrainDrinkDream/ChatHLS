@@ -1,0 +1,25 @@
+{
+    "Project Name": "advanced1_signed_adder",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../signed_adder_test.cpp in debug mode\n",
+        "   Compiling ../../../../signed_adder.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "  a = 0 , b = 0, sum = 0, overflow = 0\n",
+        "  a = 0 , b = 1, sum = 1, overflow = 0\n",
+        "  a = 1 , b = 1, sum = 2, overflow = 0\n",
+        "  a = 1 , b = 2, sum = 3, overflow = 0\n",
+        "  a = 124 , b = 125, sum = -7, overflow = 1\n",
+        "  a = 125 , b = 125, sum = -6, overflow = 1\n",
+        "All tests passed\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}
