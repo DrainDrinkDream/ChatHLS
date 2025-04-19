@@ -1,0 +1,29 @@
+{
+    "Project Name": "08_basic_examples_vhls_max_bounded_loop_loop_max_bounds",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_max_bounds.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "obj/loop_max_bounds_test.o: In function `main':\n",
+        "E:\\VScode\\benchmark_non_pragma\\08_basic_examples_vhls_max_bounded_loop\\loop_max_bounds\\Top_Function_Not_Found\\project\\solution1\\csim\\build/../../../../loop_max_bounds_test.cpp:22: undefined reference to `loop_max_bounds(ap_int<8>*, ap_uint<5>)'\n",
+        "collect2.exe: error: ld returned 1 exit status\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

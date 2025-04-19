@@ -1,0 +1,28 @@
+{
+    "Project Name": "10_basic_examples_vhls_pipelined_nested_loops_loop_pipeline",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_pipeline.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 214-167] The program may have out of bound array access (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int_base.h:232:18)\n",
+        "WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'A' in function 'loop_pipeline'.\n",
+        "WARNING: [RTGEN 206-101] Register 'acc_V' is power-on initialization.\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": "Inconsistent C/RTL simulation result",
+    "Co-SIM Failure Details": [
+        "WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on port return, possible cause: There are uninitialized variables in the C design.\n",
+        "WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on port return, possible cause: There are uninitialized variables in the C design.\n",
+        "WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on port return, possible cause: There are uninitialized variables in the C design.\n",
+        "ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.\n",
+        "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***\n"
+    ]
+}

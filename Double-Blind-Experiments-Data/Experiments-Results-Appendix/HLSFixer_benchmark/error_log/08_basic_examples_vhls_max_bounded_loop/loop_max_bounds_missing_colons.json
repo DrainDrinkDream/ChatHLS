@@ -1,0 +1,29 @@
+{
+    "Project Name": "08_basic_examples_vhls_max_bounded_loop_loop_max_bounds",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_max_bounds.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/loop_max_bounds.o' failed\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "../../../../loop_max_bounds.cpp: In function 'dout_t loop_max_bounds(din_t*, dsel_t)':\n",
+        "../../../../loop_max_bounds.cpp:11:5: error: expected ';' before '}' token\n",
+        "     }\n",
+        "     ^\n",
+        "make: *** [obj/loop_max_bounds.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

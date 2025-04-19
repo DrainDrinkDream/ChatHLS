@@ -1,0 +1,29 @@
+{
+    "Project Name": "10_basic_examples_vhls_pipelined_nested_loops_loop_pipeline",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_pipeline.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/loop_pipeline.o' failed\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "../../../../loop_pipeline.cpp: In function 'dout_t loop_pipeline(din_t*)':\n",
+        "../../../../loop_pipeline.cpp:10:18: error: 'k' was not declared in this scope\n",
+        "    acc += A[j] * k;\n",
+        "                  ^\n",
+        "make: *** [obj/loop_pipeline.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

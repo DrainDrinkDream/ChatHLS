@@ -1,0 +1,33 @@
+{
+    "Project Name": "07_basic_examples_vhls_imperfect_loops_loop_imperfect",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_imperfect.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [SYNCHK 200-77] The top function 'loop_imperfect' (loop_imperfect.cpp:3) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.\n",
+        "WARNING: [RTGEN 206-101] Port 'loop_imperfect/B_q1' has no fanin or fanout and is left dangling.\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": "Segmentation fault",
+    "Co-SIM Failure Details": [
+        "ERROR: System recieved a signal named SIGSEGV and the program has to stop immediately!\n",
+        "ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.\n",
+        "ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.\n",
+        "ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***\n",
+        "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***\n"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "Project Name": "07_basic_examples_vhls_imperfect_loops_loop_imperfect",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_imperfect.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 214-167] The program may have out of bound array access (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int_base.h:232:18)\n",
+        "WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'A' in function 'loop_imperfect'.\n",
+        "WARNING: [HLS 200-960] Cannot flatten loop 'LOOP_I' (loop_imperfect.cpp:6:12) in function 'loop_imperfect' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": "Inconsistent C/RTL simulation result",
+    "Co-SIM Failure Details": [
+        "ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.\n",
+        "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***\n"
+    ]
+}

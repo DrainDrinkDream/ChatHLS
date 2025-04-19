@@ -1,0 +1,29 @@
+{
+    "Project Name": "07_basic_examples_vhls_imperfect_loops_loop_imperfect",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_imperfect.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/loop_imperfect.o' failed\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "../../../../loop_imperfect.cpp: In function 'void loop_imperfect(din_t*, dout_t*)':\n",
+        "../../../../loop_imperfect.cpp:18:15: error: 'looofasda' was not declared in this scope\n",
+        "     looofasda();\n",
+        "               ^\n",
+        "make: *** [obj/loop_imperfect.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}
