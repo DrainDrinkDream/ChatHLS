@@ -1,0 +1,28 @@
+{
+    "Project Name": "14_basic_examples_vhls_static_memory_malloc_removed",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../malloc_removed.c in debug mode\n",
+        "../../../../malloc_removed.c:20:4: error: invalid operands to binary expression ('dsel_t' (aka 'int') and 'int *')\n",
+        "                        *(array_local+i)=din[i];\n",
+        "                        ^~~~~~~~~~~~~~~~\n",
+        "../../../../malloc_removed.c:21:3: error: expected expression\n",
+        "                else \n",
+        "                ^\n",
+        "2 errors generated.\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "g++.exe: error: obj/malloc_removed.o: No such file or directory\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

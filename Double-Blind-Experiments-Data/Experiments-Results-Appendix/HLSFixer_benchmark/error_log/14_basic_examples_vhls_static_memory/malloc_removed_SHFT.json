@@ -1,0 +1,29 @@
+{
+    "Project Name": "14_basic_examples_vhls_static_memory_malloc_removed",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Inconsistent simulation result",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../malloc_removed.c in debug mode\n",
+        "../../../../malloc_removed.c:21:27: warning: shift count >= width of type [-Wshift-count-overflow]\n",
+        "                        *(array_local+i)=din[i]>>2+32; \n",
+        "                                               ^ ~~~~\n",
+        "1 warning generated.\n",
+        "../../../../malloc_removed.c:21:27: warning: shift count >= width of type [-Wshift-count-overflow]\n",
+        "                        *(array_local+i)=din[i]>>2+32; \n",
+        "                                               ^ ~~~~\n",
+        "1 warning generated.\n",
+        "   Generating csim.exe\n",
+        "Files result.dat and result.golden.dat differ\n",
+        "Test failed  !!!\n",
+        "@E Simulation failed: Function 'main' returns nonzero value '1'.\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

@@ -1,0 +1,29 @@
+{
+    "Project Name": "14_basic_examples_vhls_static_memory_malloc_removed",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../malloc_removed.c in debug mode\n",
+        "../../../../malloc_removed.c:19:6: error: use of undeclared identifier 'array_local_'; did you mean 'array_local'?\n",
+        "                        *(array_local_+i)=din[i];\n",
+        "                          ^~~~~~~~~~~~\n",
+        "                          array_local\n",
+        "../../../../malloc_removed.c:13:7: note: 'array_local' declared here\n",
+        "        int* array_local = &_array_local[0];\n",
+        "             ^\n",
+        "1 error generated.\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "g++.exe: error: obj/malloc_removed.o: No such file or directory\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

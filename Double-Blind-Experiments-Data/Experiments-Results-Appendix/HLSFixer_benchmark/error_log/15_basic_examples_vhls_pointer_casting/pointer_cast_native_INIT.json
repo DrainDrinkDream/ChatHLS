@@ -1,0 +1,25 @@
+{
+    "Project Name": "15_basic_examples_vhls_pointer_casting_pointer_cast_native",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../pointer_cast_native.c in debug mode\n",
+        "   Generating csim.exe\n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 214-167] The program may have out of bound array access (pointer_cast_native.c:9:15)\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": "Inconsistent C/RTL simulation result",
+    "Co-SIM Failure Details": [
+        "WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined\n",
+        "WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on port return, possible cause: There are uninitialized variables in the C design.\n",
+        "ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.\n",
+        "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***\n"
+    ]
+}

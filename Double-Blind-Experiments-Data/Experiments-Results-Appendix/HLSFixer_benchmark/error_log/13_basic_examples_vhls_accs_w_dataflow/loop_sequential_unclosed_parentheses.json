@@ -1,0 +1,29 @@
+{
+    "Project Name": "13_basic_examples_vhls_accs_w_dataflow_loop_sequential",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_sequential.cpp in debug mode\n",
+        "csim.mk:83: recipe for target 'obj/loop_sequential.o' failed\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "../../../../loop_sequential.cpp: In function 'void loop_sequential(din_t*, din_t*, dout_t*, dout_t*, dsel_t, dsel_t)':\n",
+        "../../../../loop_sequential.cpp:18:1: error: expected '}' at end of input\n",
+        " }\n",
+        " ^\n",
+        "make: *** [obj/loop_sequential.o] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

@@ -1,0 +1,34 @@
+{
+    "Project Name": "13_basic_examples_vhls_accs_w_dataflow_loop_sequential",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling ../../../../loop_sequential.cpp in debug mode\n",
+        "   Generating csim.exe\n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/gmp.h:63:0: warning: \"__GMP_LIBGMP_DLL\" redefined\n",
+        " #define __GMP_LIBGMP_DLL  0\n",
+        " \n",
+        "E:/Vitis/Vitis_HLS/2022.1/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition\n",
+        " #define __GMP_LIBGMP_DLL 1\n",
+        " \n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "Source synthesis failed",
+    "C-SYNTH Failure Details": [
+        "WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (loop_sequential.cpp:5:9)\n",
+        "WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file loop_sequential.cpp\n",
+        "WARNING: [HLS 214-273] In function 'ap_int<13>::ap_int(int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int.h:179:0)\n",
+        "WARNING: [HLS 214-273] In function 'ap_int_base<13, true>::ap_int_base(int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int_base.h:260:0)\n",
+        "WARNING: [HLS 214-273] In function '_ZN8ssdm_intILi13ELb1EEC2EDq13_i', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (E:/Vitis/Vitis_HLS/2022.1/common/technology/autopilot\\ap_common.h:559:0)\n",
+        "ERROR: [HLS 214-194] in function 'loop_sequential(ap_int<8>*, ap_int<8>*, ap_int<13>*, ap_int<13>*, ap_uint<5>, ap_uint<5>)': Undefined function operator new[] (loop_sequential.cpp:12:13)\n",
+        "ERROR: [HLS 214-194] in function 'loop_sequential(ap_int<8>*, ap_int<8>*, ap_int<13>*, ap_int<13>*, ap_uint<5>, ap_uint<5>)': Undefined function operator delete[] (loop_sequential.cpp:25:3)\n",
+        "ERROR: [HLS 214-135] Syn check fail!\n",
+        "ERROR: [HLS 200-1715] Encountered problem during source synthesis\n"
+    ],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

@@ -1,0 +1,26 @@
+{
+    "Project Name": "16_basic_examples_vhls_double_pointer_pointer_double",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../pointer_double.c in debug mode\n",
+        "   Generating csim.exe\n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": true,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [
+        "WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'array' in function 'pointer_double' (pointer_double.c:11:22).\n",
+        "WARNING: [RTGEN 206-101] Global array 'pointer_double_array' will not be exposed as RTL port.\n"
+    ],
+    "Passed Co-SIM": false,
+    "Co-SIM Failure Reason": "C TB simulation failed",
+    "Co-SIM Failure Details": [
+        "ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '1'.\n",
+        "ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.\n",
+        "ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***\n",
+        "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***\n"
+    ]
+}

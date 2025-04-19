@@ -1,0 +1,23 @@
+{
+    "Project Name": "15_basic_examples_vhls_pointer_casting_pointer_cast_native",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../pointer_cast_native.c in debug mode\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "obj/pointer_cast_native_test.o: In function `main':\n",
+        "E:\\VScode\\benchmark_non_pragma\\15_basic_examples_vhls_pointer_casting\\pointer_cast_native\\Top_Function_Not_Found\\project\\solution1\\csim\\build/apcc_db/pointer_cast_native_test.c:329: undefined reference to `pointer_cast_native'\n",
+        "collect2.exe: error: ld returned 1 exit status\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

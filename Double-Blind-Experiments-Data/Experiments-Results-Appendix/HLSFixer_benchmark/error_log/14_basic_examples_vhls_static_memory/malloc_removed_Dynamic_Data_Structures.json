@@ -1,0 +1,25 @@
+{
+    "Project Name": "14_basic_examples_vhls_static_memory_malloc_removed",
+    "Passed C-SIM": true,
+    "C-SIM Failure Reason": null,
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../malloc_removed_test.c in debug mode\n",
+        "   Compiling(apcc) ../../../../malloc_removed.c in debug mode\n",
+        "   Generating csim.exe\n",
+        "Test passed !\n",
+        "INFO: [SIM 211-1] CSim done with 0 errors.\n"
+    ],
+    "Passed C-synth": false,
+    "C-SYNTH Failure Reason": "Source synthesis failed",
+    "C-SYNTH Failure Details": [
+        "ERROR: [HLS 214-194] in function 'malloc_removed': Undefined function malloc (malloc_removed.c:10:37)\n",
+        "ERROR: [HLS 214-194] in function 'malloc_removed': Undefined function malloc (malloc_removed.c:11:27)\n",
+        "WARNING: [HLS 214-167] The program may have out of bound array access (malloc_removed.c:24:21)\n",
+        "ERROR: [HLS 214-135] Syn check fail!\n",
+        "ERROR: [HLS 200-1715] Encountered problem during source synthesis\n"
+    ],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}

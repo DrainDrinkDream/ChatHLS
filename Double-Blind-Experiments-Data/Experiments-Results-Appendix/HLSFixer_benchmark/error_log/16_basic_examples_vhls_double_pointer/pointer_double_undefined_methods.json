@@ -1,0 +1,23 @@
+{
+    "Project Name": "16_basic_examples_vhls_double_pointer_pointer_double",
+    "Passed C-SIM": false,
+    "C-SIM Failure Reason": "Compilation error",
+    "C-SIM Failure Details": [
+        "INFO: [SIM 211-4] CSIM will launch GCC as the compiler.\n",
+        "   Compiling(apcc) ../../../../pointer_double.c in debug mode\n",
+        "   Generating csim.exe\n",
+        "Makefile.rules:392: recipe for target 'csim.exe' failed\n",
+        "obj/pointer_double.o: In function `pointer_double':\n",
+        "E:\\VScode\\benchmark_non_pragma\\16_basic_examples_vhls_double_pointer\\pointer_double\\undefined_methods\\project\\solution1\\csim\\build/apcc_db/pointer_double.c:470: undefined reference to `calculate'\n",
+        "collect2.exe: error: ld returned 1 exit status\n",
+        "make: *** [csim.exe] Error 1\n",
+        "ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).\n",
+        "INFO: [SIM 211-3] *************** CSIM finish ***************\n"
+    ],
+    "Passed C-synth": null,
+    "C-SYNTH Failure Reason": null,
+    "C-SYNTH Failure Details": [],
+    "Passed Co-SIM": null,
+    "Co-SIM Failure Reason": null,
+    "Co-SIM Failure Details": []
+}
